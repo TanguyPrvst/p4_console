@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>p4</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/utils/ArrayUtils.js"></script>
+    <script src="js/utils/MathHelper.js"></script>
+    <script src="js/player/Player.js"></script>
+    <script src="js/player/IA.js"></script>
+    <script src="js/player/LivingPlayer.js"></script>
+    <script src="js/core/Grid.js"></script>
+    <script src="js/core/Column.js"></script>
+    <script src="js/core/Case.js"></script>
+    <script src="js/core/Round.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/render/Render.js"></script>
+    <script src="Main.js"></script>
+</head>
+<body>
+    <label for="name">Colonne :</label>
+    <input type="text" id="column" name="name">
+    <button onclick="onClick()">Jouer</button>
+
+    <script>
+       Main._define();
+       function onClick() { Main.onClick(); }
+    </script>
+</body>
+</html>
