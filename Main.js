@@ -10,7 +10,7 @@ class Main{
     }
 
     static onClick(){
-        let value = document.getElementById("column").value;
+        let value = document.getElementById("column").value - 1;
         this.game.play(value);
     }
 }

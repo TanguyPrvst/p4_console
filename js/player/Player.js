@@ -11,7 +11,7 @@ class Player{
             if(c.isEmpty()){
                 c.player = this;
                 this.listCases.push(c);
-                console.log(this.name + " joue la case : Colonne " + c.column.x + " Ligne " + c.y);
+                console.log(this.name + " joue la case : Colonne " + (c.column.x + 1) + " Ligne " + (c.y + 1));
                 return false;
             }
         });

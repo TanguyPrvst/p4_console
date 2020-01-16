@@ -1,11 +1,18 @@
 class Data{
 
   static save(game){
-    localStorage.setItem('game', JSON.stringify(game));
+    var data = JSON.parse(sessionStorage.getItem("games"))
+    if(data == null){
+      data = [];
+    }
+    data.push(game);
+    sessionStorage.setItem("games", JSON.stringify(data))
   }
 
   static getData(){
-    var user = JSON.parse(localStorage.getItem('game'));
+    if (JSON.parse(sessionStorage.getItem("games"))) {
+      return JSON.parse(sessionStorage.getItem("games"))
+  }
   }
 
   static clear(){
